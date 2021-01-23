@@ -1,0 +1,8 @@
+[win]
+itsccm.csun.edu
+
+[win:vars]
+ansible_user=i_tonyg@CSUN.EDU
+ansible_connection=winrm
+ansible_winrm_server_cert_validation=ignore
+ansible_winrm_transport=kerberos
