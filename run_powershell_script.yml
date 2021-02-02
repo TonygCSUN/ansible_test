@@ -1,0 +1,15 @@
+
+- hosts: test
+
+  tasks:
+
+  - name: Copy File
+
+    win_copy:
+
+      src=./scripts/ dest='c:/temp/' remote_src=no
+
+  - name: Run powershell script
+   
+    win_command: powershell.exe -ExecutionPolicy ByPass -File C:\temp\powershellscript_test.ps1
+# win_command: powershell.exe -ExecutionPolicy ByPass New-Item -ItemType directory -Path C:\temp

@@ -1,0 +1,7 @@
+---
+
+- name: fetch file
+  hosts: repo 
+  user: i_tonyg@CSUN.EDU
+  tasks:
+    - fetch: src=C:/temp/powershellscript_test.ps1 dest=/home/users14/tonyg/scripts/powershellscript_test.ps1 flat=yes

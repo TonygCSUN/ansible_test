@@ -1,0 +1,10 @@
+
+- hosts: test
+
+  tasks:
+
+  - name: Copy File
+
+    win_copy:
+
+      src=./scripts/powershellscript_test.ps1 dest='c:/temp/powershellscript_test.ps1' remote_src=no
